@@ -1,7 +1,6 @@
 cd E:/Xiuya/UAT/gateway_c
 mvn clean install -Dmaven.test.skip=true
 docker stop gateway-c
-docker start gateway-c
 docker image rm gateway-c:0.0.1
 docker build . -t gateway-c:0.0.1
 docker restart redis
