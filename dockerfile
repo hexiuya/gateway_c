@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk_customised:8
 VOLUME /tmp
 ADD target/gateway-c-0.0.1.jar gateway-c-0.0.1.jar
 COPY application.properties application.properties
